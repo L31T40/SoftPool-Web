@@ -1,0 +1,47 @@
+@font-face
+{
+    font-family: qrq_dubailight;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: qrq_dubai;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: qrq_dubaimedium;
+    src: url("../../vendor/font/DubaiMedium.ttf");
+}
+
+
+
+
+.qrq_total
+{
+    box-shadow: 0px 3px 6px 1px #212529;
+    background-color: white;
+    height: 350px;
+    width: 400px;
+    border: 1px solid;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+
+
+.qrq_dados
+{
+    font-family: qrq_dubailight;
+    position: relative;
+}
+
+.qrq_size
+{
+    width: 250px;
+}
+
+

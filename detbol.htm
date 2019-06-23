@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Softpool</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/slider/nouislider.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/css/datepicker/tempusdominus-bootstrap-4.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/css/styles_detalhesboleia.css"  />
+    </head>
+
+    <body>
+
+		
+        $str1 = '';
+        
+        $str1 .= '<div id="'.$detalhdados["boleia"][0]->IDBOLEIA.'" class="azul">';
+        $str1 .= '<div id="fecharmodal" class="mb_icone">';
+        $str1 .= '<img src="'.base_url().'assets/imagens/cruz.svg">';
+        $str1 .= '</div>';
+        $str1 .= '<div class="mb_banneroculto azulclaro">';
+        $str1 .= '</div>';
+        $str1 .= '<div class="mb_cantodobanner branco">';
+        $str1 .= '<div class="mb_imagemcondutor"><img src="'.base_url().'assets/fotos/'.$detalhdados["boleia"][0]->FOTO.'"></div>';
+        $str1 .= '<div class="mb_condutor">'.$detalhdados["boleia"][0]->NOME_UTIL.'</div>';
+        $str1 .= '</div>';
+        $str1 .= '<div class="mb_bannerprincipal branco">';
+        $str1 .= '<div class="mb_flexboxcontactos">';
+        $str1 .= '<div class="mb_databoleia azulclaro">';
+        $str1 .= '<div class="mb_iconeflex">';
+        $str1 .= '<img src="'.base_url().'assets/imagens/inserirboleia-cal.svg">';
+        $str1 .= '</div>';
+        $str1 .= '<span class="mb_datadataboleia">'.MesDiaPortugues($detalhdados["boleia"][0]->DATA_DE_PARTIDA).'</span>';
+        $str1 .= '</div>';
+        $str1 .= '';
+        $str1 .= '';
+        
+        $str2 = '';
+        
+        $str2 .= '<div class="mb_iconeflexbox">';
+        $str2 .= '<div class="mb_contactartodos" data-toggle="tooltip" title="Contactar todos"></div>';
+        $str2 .= '<div class="mb_contactarcondutor" data-toggle="tooltip" title="Contactar condutor"></div>';
+        $str2 .= '<div class="mb_telefone" data-toggle="tooltip" title="Telefone do condutor"></div>';
+        $str2 .= '</div>';
+        $str2 .= '</div>';
+        $str2 .= '<div class="mb_flexboxgrande">';
+        $str2 .= '<div class="mb_flexboxpassageirosebagagens">';
+        $str2 .= '<div class="mb_listapassageiros">';
+        
+        $str3 = '';
+        
+        foreach($detalhdados["utilizadores"] as $user)
+        {
+            $str3 .= '<div class="mb_passageiro">';
+            $str3 .= '<img class="mb_passageiro_img" src="'.base_url().'assets/fotos/'.$user->FOTO.'" title="'.$user->NOME.'">';
+            $str3 .= '<img class="mb_trabalhooulazer" src="'.base_url().'assets/imagens/viajoemtrabalho.svg">';
+            $str3 .= '</div>';
+        }
+        
+        
+        $str3 .= '</div>';
+        
+        
+        $str4 = '';
+        
+        $str4 .= '<div class="mb_listabagagens">';
+        
+        /* Utilizar para as bagagens
+        
+        $str4 .= '<div class="mb_bagagem">';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_bagagem">';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_bagagem">';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_bagagem">';
+        $str4 .= '</div>';
+        
+        */
+      
+        $str4 .= '</div>';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_horarioboleiaebotoes">';
+        $str4 .= '<div class="mb_horarioboleia">';
+        
+        $str4 .= '<div class="mb_larguratotal">';
+        $str4 .= '<div class="mb_elemento">';
+        $str4 .= '<div class="mb_phpequenosembase">';
+        $str4 .= '<img src="'.base_url().'assets/imagens/mb_phsembase.svg">';
+        $str4 .= '</div>'.$detalhdados["boleia"][0]->ORIGEM.'</div>';
+        $str4 .= '<div class="mb_setas"><img src="'.base_url().'assets/imagens/setasdireita.svg"></div><div class="mb_elemento">';
+        $str4 .= '<div class="mb_phpequeno"><img src="'.base_url().'assets/imagens/placeholder.svg">';
+        $str4 .= '</div>'.$detalhdados["boleia"][0]->DESTINO.'</div></div>';
+        $str4 .= '<div class="mb_larguratotal">';
+        $str4 .= '<div class="mb_elemento"><div class="mb_relogio"><img src="'.base_url().'assets/imagens/relogio.svg">';
+        $str4 .= '</div>'.$horapartida.'</div><div class="mb_setas"><img src="'.base_url().'assets/imagens/setasdireita.svg">';
+        $str4 .= '</div><div class="mb_elemento">'.$horadestino.'</div>';
+        $str4 .= '</div>';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_botaoverde mb_addb" id="idbol-'.$detalhdados["boleia"][0]->IDBOLEIA.'">';
+        $str4 .= '<div class="mb_botaoimagem"><img src="'.base_url().'assets/imagens/mb_addboleia.svg"></div><div class="mb_botaoadicionar mb_largurabotao">Adicionar</div>';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_botaoverde mb_cancb" id="idbol-'.$detalhdados["boleia"][0]->IDBOLEIA.'">';
+        $str4 .= '<div class="mb_botaoimagem"><img src="'.base_url().'assets/imagens/mb_cancboleia.svg"></div><div class="mb_botaocancelar mb_largurabotao">Cancelar</div>';
+        $str4 .= '</div>';
+        $str4 .= '<div class="mb_botaoverde mb_addenc" id="idbol-'.$detalhdados["boleia"][0]->IDBOLEIA.'">';
+        $str4 .= '<div class="mb_botaoimagem"><img src="'.base_url().'assets/imagens/mb_addencomenda.svg"></div><div class="mb_botaoadencomenda mb_largurabotao"><span>Adicionar Encomenda</span></div>';
+        $str4 .= '</div>';
+        $str4 .= '</div>';
+        $str4 .= '</div>';
+        $str4 .= '</div>';
+        
+        $str = $str1.$str2.$str3.$str4;
+        
+        echo $str;
+
+
+        
+
+    </body>
+</html>

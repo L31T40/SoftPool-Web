@@ -1,0 +1,263 @@
+@font-face
+{
+    font-family: enc_dubailight;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: enc_dubai;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: enc_dubaimedium;
+    src: url("../../vendor/font/DubaiMedium.ttf");
+}
+
+
+.enc_margin
+{
+    margin-top: 35px;
+}
+
+.enc_margin2
+{
+    margin-top: 20px;
+}
+
+.enc_total
+{
+    box-shadow: 0px 3px 6px 1px #212529;
+    background-color: white;
+    position: relative;
+    height: 350px;
+    width: 600px;
+    border: 1px solid;
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: inherit !important;
+    margin-right: inherit !important;
+    transform: translateX(-50%) !important;
+}
+
+.enc_total2
+{
+    box-shadow: 0px 3px 6px 1px #212529;
+    background-color: white;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    border: 1px solid;
+    left: 36% !important;
+    top: 50px;
+    margin-left: inherit !important;
+    margin-right: inherit !important;
+    z-index: 9000;
+}
+
+.enc_header
+{
+    position: relative;
+    background-color: #027874;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+.enc_headertexto
+{
+    font-family: enc_dubaimedium;
+    font-size: 1.5em;
+    line-height: 0.8em;
+    color: white;
+}
+
+.enc_dados
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 75px;
+}
+
+.msg_dados
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 25px;
+}
+
+.enc_user
+{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagemlogin
+{
+    height: 80px;
+    width: 80px;
+}
+
+.msg_imagemlogin
+{
+    height: 40px;
+    width: 40px;
+}
+
+.msg_caixa
+{
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.enc_user img
+{
+    height: 100%;
+    filter: drop-shadow(5px 5px 5px #ccc);
+}
+
+.enc_form
+{
+    margin-left: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.msg_form
+{
+    margin-top: 7px;
+    margin-left: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.enc_nempregado
+{
+    display: flex;
+}
+
+.enc_nomempregado
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+.nomeuser
+{
+    font-size: 15px;
+}
+
+.enc_descrip
+{
+    margin-top: 10px;
+}
+
+.enc_lupa
+{
+    margin-left: 8px;
+    height: 25px;
+    width: 25px;
+}
+
+.enc_lupa img
+{
+    height: 100%;
+}
+
+
+.enc_destinatario
+{
+    margin-left: 20px;
+    margin-top: 18px;
+    font-family: enc_dubaimedium;
+    color: #027874;
+}
+
+.enc_branco
+{
+    height: 20px;
+}
+
+.enc_botoes
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75px;
+}
+
+.enc_botaoverde
+{
+    cursor: pointer;
+    margin-top: 12px;
+    height: 40px;
+    width: 250px;
+    background-color: #027874;
+    box-shadow: 0px 3px 6px 1px #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.enc_largurabotao
+{
+    display: block;
+    height: 32px;
+    width: 150px;
+}
+
+.enc_espaco
+{
+    width: 20px;
+}
+
+.enc_botaoimagem
+{
+    height: 33px;
+    width: 33px;
+    margin-left: 53px;
+    margin-top: 4px;
+}
+
+.enc_botaoimagem2
+{
+    height: 29px;
+    width: 29px;
+    margin-left: 62px;
+    margin-top: 6px;
+}
+
+.enc_botaoadicionar
+{
+    color: white;
+    font-family: enc_dubailight;
+    font-size: 17px;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+
+.enc_botaocancelar
+{
+    color: white;
+    font-family: enc_dubailight;
+    font-size: 17px;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+
+.enc_escondido
+{
+    display: none;
+}
+
+.ui-front{
+    z-index: 200000 !important;
+}

@@ -1,0 +1,470 @@
+@font-face
+{
+    font-family: mb_dubailight;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: mb_dubai;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: mb_dubaimedium;
+    src: url("../../vendor/font/DubaiMedium.ttf");
+}
+
+.map{
+    height: 320px;
+    width: 340px;
+    box-shadow: 0px 3px 6px 1px #666666;
+}
+
+.azul
+{
+    background-color: #39639C;
+    height: 500px;
+    width: 840px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.branco
+{
+    background-color: #FEFEFE;
+}
+
+.azulclaro
+{
+    background-color: #76AAF1;
+}
+
+.mb_icone
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 27px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.mb_icone2
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.mb_bannerprincipal
+{
+    position: absolute;
+    height: 380px;
+    width: 730px;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.mb_cantodobanner
+{
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    display: flex;
+    height: 70px;
+    width: 215px;
+    margin-top: 30px;
+    margin-left: 545px;
+    border: none;
+    z-index: 10;
+}
+
+
+
+.mb_banneroculto
+{
+    position: absolute;
+    width: 720px;
+    height: 380px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.mb_databoleia
+{
+    align-self: flex-start; /*elemento de uma flexbox maior*/
+    display:flex;           /*comporta-se ele próprio como uma flexbox*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 160px;
+    height: 36px;
+}
+
+
+.mb_iconeflex
+{
+    padding-top: 2px;
+    width: 20px;   
+}
+
+
+.mb_datadataboleia
+{
+    padding-top: 2px;
+    font-size: 20px;
+    font-family: mb_dubaimedium;
+    color: #1B427A;
+}
+
+.mb_flexboxcontactos
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mb_iconeflexbox
+{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.mb_condutor
+{
+    font-family: mb_dubai;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+
+.mb_imagemcondutor
+{
+    margin-top: 12px;
+    margin-left: 45px;
+    height: 47px;
+}
+
+.mb_imagemcondutor img
+{
+    height: 100%;
+}
+
+
+/* Imagens */
+
+.mb_caixamensagens
+{
+    background-image: url("../../imagens/chatting.svg");
+    margin-right: 18px;
+    height: 80%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.mb_contactartodos
+{
+    background-image: url("../../imagens/mb_contactartodos.svg");
+    height: 80%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.mb_contactarcondutor
+{
+    margin-top: 15px;
+    background-image: url("../../imagens/mb_contactarcondutor.svg");
+    height: 35%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.mb_telefone
+{
+    margin-top: 12px;
+    background-image: url("../../imagens/mb_telefone.svg");
+    height: 45%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.mb_flexboxgrande
+{
+    display: inline-flex;
+}
+
+.mb_flexboxpassageirosebagagens
+{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 150px;
+}
+
+.mb_listapassageiros
+{
+    /* propriedades como elemento da flexbox maior*/
+    /*------------*/
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    /*------------*/
+    /* propriedades dele próprio como flexbox*/
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    height: 290px;
+}
+
+.mb_passageiro
+{
+    margin-top: 5px;
+    margin-left: 3px;
+    height: 50px;
+    width: 50px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto; 
+    position: relative;
+}
+
+.mb_obterBagbagagem
+{
+    cursor: pointer;
+}
+
+.mb_passageiro_img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.mb_listabagagens
+{
+    /* propriedades como elemento da flexbox maior*/
+    /*------------*/
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    /*------------*/
+    /* propriedades dele próprio como flexbox*/
+    margin-left: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.mb_bagagem
+{
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    border: solid 1px black;    
+}
+
+.mb_horarioboleiaebotoes
+{
+    margin-left: 54px;
+    width: 225px;
+}
+
+.mb_horarioboleia
+{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(118, 170, 241, 0.17);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+/*    background-color: #76AAF1;*/
+/*    opacity: 0.17;*/
+}
+
+.mb_larguratotal
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mb_escondido
+{
+    display: none;
+}
+
+.mb_elemento
+{
+    font-size: 13px;
+    display: flex;
+    width: 50%;
+    color: #1B427A;
+}
+
+.mb_phpequenosembase
+{
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.mb_phpequeno
+{
+    width: 19px;
+    height: 19px;
+    margin-left: 3px;
+    margin-right: 2px;
+}
+
+.mb_setas
+{
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+}
+
+.mb_relogio
+{
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.mb_trabalhooulazer
+{
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.mb_botaoverde
+{
+    cursor: pointer;
+    height: 40px;
+    width: 205px;
+    background-color: #027874;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px 1px #ccc;
+    display: flex;
+}
+
+.mb_botaoazul
+{
+    cursor: pointer;
+    height: 40px;
+    width: 205px;
+    background-color: #03b0aa;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px 1px #ccc;
+    display: flex;
+}
+
+.mb_largurabotao
+{
+    display: block;
+    width: 20px;
+    height: 32px;
+    width: 90px;
+}
+
+.mb_botaoimagem
+{
+    height: 33px;
+    width: 33px;
+    margin-left: 45px;
+    margin-top: 4px;
+}
+
+.mb_botaoadicionar
+{
+    color: white;
+    font-family: mb_dubaimedium;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+.mb_botaocancelar
+{
+    color: white;
+    font-family: mb_dubaimedium;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+.mb_botaoadencomenda
+{
+    color: white;
+    font-family: mb_dubaimedium;
+    line-height: 1em;
+    float: right;
+    display: table;
+    position: relative;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.mb_botaoadencomenda span
+{
+    text-align: center;
+    display: table-cell;
+}
+
+.noUi-connects
+{
+    background: #06AAA4 !important;
+}
+
+.noUi-handle
+{
+    background: #027874 !important;
+}
+
+/*.mb_botaoadencomenda span
+{
+    text-align: center;
+}*/
+
+
+/* Estilo do tooltip */
+
+.tooltip .tooltip-inner {
+  background-color: #027874 !important;
+}
+
+.tooltip .arrow::before {
+  border-top-color: #027874 !important;
+}

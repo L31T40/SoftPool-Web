@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Softpool</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/fontawesome-all.css" />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/slider/nouislider.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/datepicker/tempusdominus-bootstrap-4.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/dist/css/styles_criarboleia.css"  />
+    </head>
+
+
+<div class="modal fade" id="criarBoleia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog larguracriarboleiaheader ligarelmentos" role="document">
+					 <form action="<?php echo base_url()?>index.php/criar/NewRide", id="formulariocriar" method="post">
+							<div class="cb_total">
+								<div class="cb_header">
+									<div class="cb_headertexto">Criar boleia</div>
+								</div>
+							   
+									<div class="cb_loc_e_data">
+										<input class="cb_escondido" id="iddapartida" type="text" name="cb_obteridpartida" form="formulariocriar">
+										<input class="cb_escondido" id="iddodestino" type="text" name="cb_obteriddestino" form="formulariocriar">
+										<div class="cb_phgrande"><img src="<?php echo base_url()?>assets/imagens/inserirboleia-local.svg"></div>
+										<div class="cb_partida">
+											<input type="text" id="cbidpartida" name="cb_obterpartida" placeholder="Partida..." form="formulariocriar">
+										</div>
+										<div class="cb_volante">
+											<img src="<?php echo base_url()?>assets/imagens/inserirboleia-volante.svg">
+										</div>
+										<div class="cb_destino">
+											<input type="text" id="cbiddestino" name="cb_obterdestino" placeholder="Destino..." form="formulariocriar">
+										</div>
+										<div class="cb_calendario">
+											<div class="cb_calendario_img"><img src="<?php echo base_url()?>assets/imagens/inserirboleia-cal.svg"></div>
+											<div class="cb_calendario_txt">
+												<input type="text" class="datetimepicker-input" id="datetimepicker3" data-toggle="datetimepicker" name="cb_obterdata" data-target="#datetimepicker3" placeholder="Data..." form="formulariocriar"/>
+											</div>
+										</div>
+									</div>
+
+									<div class="cb_horas">
+										<div class="cb_horaspartida">
+											<div class="cb_horas_txt">Hora de Saída</div>
+											<div id="sliderpartida" class="cb_sliderescolhahoras"></div>
+										</div>
+										<div class="cb_horasdestino">
+											<div class="cb_horas_txt">Hora de Chegada</div>
+											<div id="sliderdestino" class="cb_sliderescolhahoras"></div>
+
+										</div>
+										<div class="cb_objectivo">
+											<div class="cb_objectivo_txt">Objectivo pessoal?</div>
+											<div class="cb_toggle checkbox checkbox-slider--b-flat">
+												<label>
+													<input name="cb_obterobjectpessoal" type="checkbox" form="formulariocriar"><span></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="cb_veiculo_info_titulo">Informação do veículo</div>
+									<input class="cb_escondido" id="horas_de_partida" type="text" class="form-control" name="cb_obterhoraspartida" form="formulariocriar">
+									<input class="cb_escondido" id="horas_de_destino" type="text" class="form-control" name="cb_obterhorasdestino" form="formulariocriar">
+									<input class="cb_escondido" id="iddaviatura" type="text" name="cb_obteridviatura" form="formulariocriar">
+									<div class="cb_divcomdivs">
+										<div class="cb_vazia"></div>
+										<div class="cb_veiculo_info">
+
+
+											<label class="cb_matricula_label" for="matricula">Matrícula</label>
+											<div class="cb_matricula">
+												<input id="matricula" type="text" name="cb_obtermatricula" placeholder="" form="formulariocriar">
+											</div>
+											<div class="cb_seguro">
+												<div class="cb_seguro_txt"></div>
+												
+												
+											</div>
+											<label class="cb_lotacao_label" for="lotacao">Lotação</label>
+											<div class="cb_lotacao">
+												<input type="number" id="lotacao" form="formulariocriar" name="cb_obterlotacao" min="1" max="9">
+											</div>
+
+											
+
+
+										</div>
+										<div class="cb_vazia"></div>
+									</div>
+
+									<div class="cb_botoes">
+										<div id="iniciarcriarboleia" onClick="document.getElementById('formulariocriar').submit()" class="cb_botaoverde cb_cancelar">
+											<div class="cb_botaoimagem">
+												<img src="<?echo base_url()?>assets/imagens/cb_criar.svg">
+											</div>
+											<div class="cb_botaoadicionar cb_largurabotao">CRIAR BOLEIA</div>
+										</div>
+										<div class="cb_vazia2"></div>
+										<div id="cancelarcriarboleia" onClick="$('#criarBoleia').modal('hide')" class="cb_botaoverde">
+											<div class="cb_botaoimagem2">
+												<img src="<?echo base_url()?>assets/imagens/cb_cancelar.svg"></div>
+											<div class="cb_botaocancelar cb_largurabotao">CANCELAR</div>
+										</div>
+									</div>
+
+
+
+								
+							
+								
+							</div>
+						 </form>
+						</div>
+					</div>

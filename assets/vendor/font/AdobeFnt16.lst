@@ -1,0 +1,49 @@
+%!Adobe-FontList 1.16
+%Locale:0x816
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BebasNeue
+FamilyName:Bebas Neue
+StyleName:Regular
+FullName:Bebas Neue
+MenuName:Bebas Neue
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Os Meus Documentos\Dropbox\ESTGV\AI_1\Fichas\Assets da ficha3\Font\BebasNeue.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:63284
+FileModTime:1476133762
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Bebas Neue
+NameArray:0,Win,1,Bebas Neue
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Lobster1.4
+FamilyName:Lobster 1.4
+StyleName:Regular
+FullName:Lobster 1.4
+MenuName:Lobster 1.4
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Os Meus Documentos\Dropbox\ESTGV\AI_1\Fichas\Assets da ficha3\Font\Lobster_1_4.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:37632
+FileModTime:1476133768
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Lobster 1.4
+NameArray:0,Win,1,Lobster 1.4
+%EndFont
+

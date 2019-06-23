@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="304 4230 27.242 43.588">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1b427a;
+      }
+    </style>
+  </defs>
+  <g id="location-pointer" transform="translate(289 4230)">
+    <g id="Group_80" data-name="Group 80" transform="translate(15)">
+      <path id="Path_137" data-name="Path 137" class="cls-1" d="M28.621,0A13.621,13.621,0,0,0,15,13.621c0,13.006,13.621,29.967,13.621,29.967S42.242,26.627,42.242,13.621A13.622,13.622,0,0,0,28.621,0Zm0,21.14a7.355,7.355,0,1,1,7.355-7.355A7.355,7.355,0,0,1,28.621,21.14Z" transform="translate(-15)"/>
+    </g>
+  </g>
+</svg>

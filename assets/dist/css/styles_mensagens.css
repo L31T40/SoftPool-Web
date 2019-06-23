@@ -1,0 +1,315 @@
+@font-face
+{
+    font-family: mens_dubailight;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: mens_dubai;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: mens_dubaimedium;
+    src: url("../../vendor/font/DubaiMedium.ttf");
+}
+
+#map{
+    height: 320px;
+    width: 340px;
+    box-shadow: 0px 3px 6px 1px #666666;
+}
+
+.azul
+{
+    background-color: #39639C;
+    height: 500px;
+    width: 840px;
+}
+
+.branco
+{
+    background-color: #FEFEFE;
+}
+
+.azulclaro
+{
+    background-color: #76AAF1;
+}
+
+.mens_icone
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 27px;
+    width: 22px;
+    cursor: pointer;
+}
+
+
+.mens_bannerprincipal
+{
+    position: absolute;
+    height: 380px;
+    width: 730px;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+
+.mens_banneroculto
+{
+    position: absolute;
+    width: 720px;
+    height: 380px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.mens_databoleia
+{
+    align-self: flex-start; /*elemento de uma flexbox maior*/
+    display:flex;           /*comporta-se ele próprio como uma flexbox*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 160px;
+    height: 36px;
+}
+
+
+.mens_iconeflex
+{
+    padding-top: 2px;
+    width: 20px;   
+}
+
+
+.mens_datadataboleia
+{
+    padding-top: 2px;
+    font-size: 20px;
+    font-family: mens_dubaimedium;
+    color: #1B427A;
+}
+
+.mens_flexboxcontactos
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mens_iconeflexbox
+{
+    margin-left: 50px;
+    width: 164px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.mens_condutor
+{
+    font-family: mens_dubai;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+
+.mens_imagemcondutor
+{
+    margin-top: 12px;
+    margin-left: 45px;
+    height: 47px;
+}
+
+.mens_imagemcondutor img
+{
+    height: 100%;
+}
+
+
+/* Imagens */
+
+.mens_contactartodos
+{
+    background-image: url("../../imagens/mb_contactartodos.svg");
+    height: 80%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.mens_contactarcondutor
+{
+    margin-top: 15px;
+    background-image: url("../../imagens/mb_contactarcondutor.svg");
+    height: 35%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.mens_telefone
+{
+    margin-top: 12px;
+    background-image: url("../../imagens/mb_telefone.svg");
+    height: 45%;
+    min-width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.mens_flexboxgrande
+{
+    display: inline-flex;
+}
+
+.mens_flexboxpassageirosebagagens
+{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 150px;
+}
+
+.mens_listapassageiros
+{
+    /* propriedades como elemento da flexbox maior*/
+    /*------------*/
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    /*------------*/
+    /* propriedades dele próprio como flexbox*/
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    height: 290px;
+}
+
+.mens_passageiro
+{
+    margin-top: 5px;
+    margin-left: 3px;
+    height: 50px;
+    width: 50px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto; 
+    position: relative;
+}
+
+.mens_passageiro_img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.mens_listabagagens
+{
+    /* propriedades como elemento da flexbox maior*/
+    /*------------*/
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    /*------------*/
+    /* propriedades dele próprio como flexbox*/
+    margin-left: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.mens_bagagem
+{
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    border: solid 1px black;    
+}
+
+.mens_horarioboleiaebotoes
+{
+    margin-left: 54px;
+    width: 225px;
+}
+
+.mens_horarioboleia
+{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(118, 170, 241, 0.17);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+/*    background-color: #76AAF1;*/
+/*    opacity: 0.17;*/
+}
+
+/*.mens_larguratotal
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}*/
+
+/*.mens_elemento
+{
+    font-size: 13px;
+    display: flex;
+    width: 50%;
+    color: #1B427A;
+}*/
+
+
+
+
+.mens_trabalhooulazer
+{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo do tooltip */
+
+.tooltip .tooltip-inner {
+  background-color: #027874 !important;
+}
+
+.tooltip .arrow::before {
+  border-top-color: #027874 !important;
+}

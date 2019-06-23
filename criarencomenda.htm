@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Softpool</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/fontawesome-all.css" />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/slider/nouislider.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/datepicker/tempusdominus-bootstrap-4.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/dist/css/styles_criarencomenda.css"  />
+    </head>
+
+
+
+<!--            E preciso um formulário-->
+    
+            <div class="enc_total">
+                <div class="enc_header">
+                    <div class="enc_headertexto">Adicionar Encomenda</div>
+                </div>
+                <form id="criar_encomenda">
+                <div class="enc_destinatario">Destinatário</div>
+                <div class="enc_dados">
+                    <div class="enc_user">
+                        <div class="imagemlogin"><img src="assets/imagens/user.png"></div>
+                    </div>
+                    <div class="enc_form">
+                        <div class="enc_nempregado">
+                            <input type="text" placeholder="Nº Empregado..." size="13" readonly>
+                            <div class="enc_lupa">
+                              <img src="assets/imagens/lupa_azul.svg">
+                            </div>
+                        </div>
+                        <div class="nomeuser">Por favor efectue uma pesquisa</div>
+                        <div class="enc_nomempregado">
+                            <input type="text" placeholder="Nome..." size="48">
+                            <div class="enc_lupa">
+                              <img src="assets/imagens/lupa_azul.svg">
+                            </div>
+                            </div>
+                        <textarea placeholder="Descrição da Encomenda..." class="enc_descrip" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+
+
+                    
+                  
+
+                    <div class="enc_botoes">
+                        <div id="iniciarcriarboleia" onClick="document.getElementById('criar_encomenda').submit()" class="enc_botaoverde enc_cancelar">
+                            <div class="enc_botaoimagem">
+                                <img src="assets/imagens/encomendas.svg">
+                            </div>
+                            <div class="enc_botaoadicionar enc_largurabotao">ADICIONAR</div>
+                        </div>
+                        
+                         <!--Colocar nome correcto do modal -->
+                        
+                        <div class="enc_espaco"></div>
+                        
+                        <div id="cancelarcriarboleia" onClick="$('#criarBoleia').modal('hide')" class="enc_botaoverde">
+                            <div class="enc_botaoimagem2">
+                                <img src="assets/imagens/cb_cancelar.svg"></div>
+                            <div class="enc_botaocancelar enc_largurabotao">CANCELAR</div>
+                        </div>
+                    </div>
+
+                    </form>
+
+
+
+
+            </div>
+         </form>

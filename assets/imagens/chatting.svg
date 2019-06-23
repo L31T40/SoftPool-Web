@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="7632.11 2548.188 71.559 59.212">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #76aaf1;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Path_90);
+      }
+    </style>
+    <filter id="Path_90" x="7632.11" y="2548.188" width="60.653" height="59.212" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="chatting" transform="translate(7641.11 2554.188)">
+    <path id="Path_89" data-name="Path 89" class="cls-1" d="M184.237,133.9c11.779,0,21.327,7.583,21.327,16.937,0,6.679-4.869,12.455-11.941,15.212a10.567,10.567,0,0,0,2.926,9.063,10.435,10.435,0,0,1-9.964-7.44q-1.157.1-2.349.1c-11.778,0-21.327-7.583-21.327-16.937S172.459,133.9,184.237,133.9Z" transform="translate(-143.005 -122.523)"/>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -7641.11, -2554.19)">
+      <path id="Path_90-2" data-name="Path 90" class="cls-2" d="M21.327,40.806C9.548,40.806,0,48.389,0,57.743,0,64.423,4.869,70.2,11.941,72.956a10.567,10.567,0,0,1-2.926,9.063,10.435,10.435,0,0,0,9.964-7.44q1.157.1,2.349.1c11.778,0,21.327-7.583,21.327-16.937S33.1,40.806,21.327,40.806Z" transform="translate(7641.11 2513.38)"/>
+    </g>
+  </g>
+</svg>

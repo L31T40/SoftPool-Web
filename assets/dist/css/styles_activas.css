@@ -1,0 +1,584 @@
+@font-face
+{
+  font-family: candaranormal;
+  src: url("../../vendor/font/Candara.ttf");
+}
+
+@font-face
+{
+  font-family: candarabold;
+  src: url("../../vendor/font/CandaraBold.ttf");
+}
+
+@font-face
+{
+  font-family: trebuchet;
+  src: url("../../vendor/font/trebuc.ttf");
+}
+
+@font-face
+{
+    font-family: dubailight;
+    src: url("../../vendor/font/Dubai-Light.ttf");
+}
+
+@font-face
+{
+    font-family: dubai;
+    src: url("../../vendor/font/Dubai-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: dubaimedium;
+    src: url("../../vendor/font/DubaiMedium.ttf");
+}
+
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: inherit !important;
+    /* para se sobrepor ao código do bootstrap */
+}
+
+html{
+    background: url("../../imagens/fundo2.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*body{
+    background-image: url("imagens/background%201mais2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 100%;
+}*/
+
+
+.primeira {
+    height: 20px;
+    padding:0 !important;
+    white-space: nowrap;
+}
+
+.primeira div{
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    height: 105% !important;
+    width: 105% !important;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #06AAA4 !important;
+    color: white;
+    font-family: dubaimedium;
+    font-size: 18px;
+    transform: translateX(-15px);
+}
+
+.esconder
+{
+    display: none !important;
+}
+
+.mostrar
+{
+    display: block !important;
+}
+
+.pesquisa {
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.topo
+{
+    height: 20px;
+}
+
+.barrapesquisa
+{
+    height: 80px;
+    background-color: #1B427A;
+    opacity: 0.73;
+}
+
+.margemsuperior {
+    margin-top: 20px;
+}
+
+.espaco
+{
+    height: 18px;
+}
+
+.softpool
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 92px;
+    background-color: #1B427A;
+    opacity: 0.80;
+    z-index: 19;
+}
+
+.softpoolimg
+{
+    position:absolute;
+    height: 90.21px;
+    top: 30.72px;
+    left: 48.17px;
+    opacity: 1;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.softpoolimg img
+{
+    height: 100%;
+}
+
+
+.search
+{
+    position: relative;
+    min-height: 70px;
+    background-color: rgba(27, 66, 122, 0.75);
+/*    opacity: 0.73;*/
+}
+
+input[type="text"] {
+    border-radius: inherit;
+}
+
+
+.bemvindo
+{
+    font-family: candarabold;
+    color: #1B427A;
+    font-size: 2.2em;
+    margin: 0 auto;
+}
+
+.caixalogin
+{
+    background-color: white;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.imagemlogin
+{
+    height: 100px;
+}
+
+.imagemlogin img
+{
+    height: 100%;
+}
+
+.esqueceu
+{
+    margin-top: 20px;
+    font-family: trebuchet;
+    color: #1B427A;
+    font-size: 13px;
+}
+
+.posic{
+    margin-left: 20px;
+}
+
+.carro{
+    margin-top: -4px;
+    height: 37px;
+    width: 37px;
+}
+
+.carro img{
+    height: 100%;
+}
+
+.dispflex{
+    flex: left;
+}
+
+.footercentrado{
+    justify-content: center !important;
+}
+
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+
+.progress-bar {
+    color: #333;
+} 
+
+.volante{
+    height: 42px;
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.volante:hover{
+    cursor: pointer;
+}
+
+.lupa{
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+.brancocomsombra
+{
+    position: relative;
+    display: block;
+    margin-top: 12px;
+   max-height: 800px;
+   background-color: white;
+   padding-right: 25px !important;
+   box-shadow: 4px 4px 5px 0px #ccc;
+}
+
+
+
+.tituloverde
+{
+    font-family: dubailight;
+    color: white;
+    background-color: #027874 !important;
+    font-weight: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filt
+{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.filt img
+{
+    height: 90%;
+}
+
+.criarboleiaheader
+{
+    background-color: #027874;
+    height: 32px;
+    color: white;
+    font-size: 1.5em;
+    font-family: dubaimedium;
+    line-height: 0.8em;
+    padding-top: 10px;
+}
+
+
+
+.conteudocriarboleia
+{
+    border-radius: inherit !important;
+    height: 500px;
+}
+
+.horariosparaboleia
+{
+    padding-top: 100px;
+    height: 170px;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.formdoveiculo{
+    height: 120px;
+    padding-top: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.matric
+{
+    color: #027874;
+    font-family: dubailight;
+}
+
+.icone
+{
+	margin-top: 6px;
+    margin-left: 20px;
+	height: 30px;
+    z-index: 2000;
+    opacity: 100%;
+}
+
+.icone img
+{
+    height: 100%;
+}
+
+.extrasize
+{
+    height: 40px !important;
+}
+
+.dadosboleianovalinha
+{
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.indentar
+{
+    margin-left: 50px;
+}
+
+.largura_tabela
+{
+    margin-left: 18px !important;
+}
+
+#Asairde td
+{
+    padding-right: 5px !important;
+    padding-left: 6px !important;
+}
+
+td
+{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+}
+
+.largura_tabela tr
+{
+    cursor: pointer !important;
+}
+
+.th
+{
+    display: none;
+
+}
+
+.watch
+{
+    display: table-cell;
+    height: 20px;
+}
+
+.watch img
+{
+    height: 100%;
+    opacity: 0.6;
+}
+
+.espacoentresliders
+{
+    width: 80px;
+}
+
+.sem_relativo
+{
+    position: relative !important;
+}
+
+.larguramodalverboleias
+{
+    width: 700px;
+    height: 400px;
+}
+
+.ligarelementos
+{
+    pointer-events: auto !important;
+}
+
+.textoeslider
+{
+    width: 370px;
+    display: flex;
+}
+
+.textopartida
+{
+    color: #027874;
+    font-family: dubaimedium;
+}
+
+.textodestino{
+    color: #027874;
+    font-family: dubaimedium;
+}
+
+table thead{
+    display:none !important;
+}
+
+table tbody{
+    font-family: dubailight;
+    color: #1B427A;
+}
+
+.chatbotao
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.downbotao
+{
+    width: 32px;
+    height: 32px;
+    margin-top: 29px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.downbotao img
+{
+    height: 100%;
+}
+
+#logar_off
+{
+    text-decoration: inherit;
+    display:flex;
+}
+
+.logoff
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 28px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.logoff_texto
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 28px;
+    margin-right: 16px;
+    cursor: pointer;
+    font-family: dubai;
+    color: white;
+    font-size: 30px;
+}
+
+/*-----    CÓDIGO PROVENIENTE DE W3SCHOOLS    -----*/
+
+
+/* Snackbar posicionado em baixo, e no meio do ecrã. */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+/* Classe é adicionada com javascript */
+
+
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Animações */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+@media screen and (max-width: 1200px){
+  table{
+    width: inherit !important;
+  }  
+
+  .brancocomsombra
+  {
+    display: inline-block;
+  }
+}
+/*
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 576px){
+    
+}
+
+@media screen and (max-width: 460px){
+    
+}
+*/

@@ -1,0 +1,252 @@
+
+        @font-face
+        {
+            font-family: segoeui;
+            src: url("../../vendor/font/SegoeUI.ttf");
+        }
+        
+        @font-face
+        {
+            font-family: segoeuibold;
+            src: url("../../vendor/font/SegoeUIBold.ttf");
+        }
+        
+        
+         #slider_filtro
+         {
+            height: 8px !important;
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+         }
+        
+        .flt_fontesegoeregular
+        {
+            font-family: segoeui;
+        }
+        
+        .flt_mostrar
+        {
+            display: block !important;
+        }
+        
+        .flt_fontesegoeboldverde
+        {
+            font-family: segoeuibold;
+            color: #027874;
+        }
+        
+        .flt_rectangulo
+        {
+            box-shadow: 0px 3px 6px 1px #666666;
+            top: 219px;
+            left: 8px;
+            display: none;
+            cursor: move;
+            position: absolute;
+            width: 190px;
+            height: 300px;
+        }
+        
+        .flt_barra
+        {
+            width: 100%;
+            height: 28px;
+            background-color: #06AAA4;
+            padding-top: 1px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .flt_barratexto
+        {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .flt_seta
+        {
+            width: 8px;
+            height: 8px;
+            margin-right: 15px;
+        }
+        
+        .flt_rectangulobranco
+        {
+            background-color: white;
+            border: 1px solid;
+            height:100%;    /* em principio so para trabalhar */
+        }
+        
+        .flt_ordenar
+        {
+            font-size: 14px;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        
+        .flt_ordem
+        {
+            margin-left: 5px;
+            display: flex;
+        }
+        
+        .flt_ordem_icone
+        {
+            cursor: pointer !important;
+            width: 15px;
+            height: 15px;
+        }
+        
+        
+        
+        .flt_ordem_texto
+        {
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        
+        .flt_semnada
+        {
+            height: 20px;
+        }
+        
+        .flt_horas
+        {
+            height: 50px;
+        }
+        
+        .flt_horas_texto
+        {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        
+        .flt_estado_texto
+        {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        
+        .flt_estado_flex
+        {
+            display: flex;
+            margin-left: 5px;
+            max-width: 95%;
+            flex-wrap: wrap;
+        }
+        
+        .flt_estado_margem
+        {
+            margin-left: 12px;
+        }
+        
+        .flt_estado_margem2
+        {
+            margin-left: 5px;
+        }
+        
+        .flt_estado_checkbox
+        {
+            width: 10px;
+            height: 10px;
+        }
+        
+        .flt_estado_checkbox_txt
+        {
+            color: #027874;
+            font-size: 13px;
+        }
+        
+        .flt_umestado
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 43%;
+        }
+        
+        .flt_umestado_img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .flt_umestado_img img
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flt_botaofiltro
+        {
+            margin-left: 50%;
+            transform: translateX(-53%);
+            font-family: segoeui !important;
+            color: black !important;
+            text-decoration: none !important;
+            font-size: 13px !important;
+        }
+        
+
+
+        .flt_umestado input[type="checkbox"] {
+            opacity: 0;
+        }
+
+        .flt_umestado label {
+            position: relative;
+            display: inline-block;
+
+            /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+            padding-left: 22px;
+        }
+
+        .flt_umestado label::before,
+        .flt_umestado label::after {
+            position: absolute;
+            content: "";
+
+            /*Needed for the line-height to take effect*/
+            display: inline-block;
+        }
+
+        /*Outer box of the fake checkbox*/
+        .flt_umestado label::before{
+            height: 16px;
+            width: 16px;
+
+            border: 1px solid;
+            left: 0px;
+
+            /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+             *to vertically center it.
+             */
+            top: 3px;
+        }
+
+        /*Checkmark of the fake checkbox*/
+        .flt_umestado label::after {
+            height: 5px;
+            width: 9px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+
+            transform: rotate(-45deg);
+
+            left: 4px;
+            top: 7px;
+        }
+
+        /*Hide the checkmark by default*/
+        .flt_umestado input[type="checkbox"] + label::after {
+            content: none;
+        }
+
+        /*Unhide on the checked state*/
+        .flt_umestado input[type="checkbox"]:checked + label::after {
+            content: "";
+        }
+
+        /*Adding focus styles on the outer-box of the fake checkbox*/
+        .flt_umestado input[type="checkbox"]:focus + label::before {
+            outline: rgb(59, 153, 252) auto 5px;
+        }

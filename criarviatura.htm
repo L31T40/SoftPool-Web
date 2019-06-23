@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Softpool</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/fontawesome-all.css" />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/slider/nouislider.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/datepicker/tempusdominus-bootstrap-4.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/dist/css/styles_criarviatura.css"  />
+    </head>
+
+
+
+<!--            E preciso um formulário-->
+    
+            <div class="cv_total">
+                <div class="cv_header">
+                    <div class="cv_headertexto">Criar viatura</div>
+                </div>
+
+                    <div class="cv_dados">
+                        
+                        <div class="cv_marca">
+                            <input type="text" id="cbidmarca" name="cv_obtermarca" placeholder="marca..." form="formulariocriar">
+                            
+<!--                            Fazer autocomplete-->
+                        </div>
+                        <div class="cv_modelo">
+                            <input type="text" id="cbidmodelo" name="cv_obtermodelo" placeholder="modelo..." form="formulariocriar">
+                            
+                            <!--                            Fazer autocomplete-->
+                        </div>
+                        <div class="cv_combustivel">
+                            <div class="cv_combustivel_txt">
+                                <input type="text" name="cv_obtercombustivel" placeholder="Combustível..." form="formulariocriar"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv_branco">
+                    </div>
+                    
+                    <div class="cv_divcomdivs">
+
+                            <label class="cv_matricula_label" for="matricula">Matrícula</label>
+                            <div class="cv_matricula">
+                                <input id="matricula" type="text" name="cv_obtermatricula" placeholder="" form="formulariocriar">
+                            </div>
+                                
+                        <div class="cv_propr_viatura">
+                            <div class="cv_propr_viatura_txt">Objectivo pessoal?</div>
+                            <div class="cv_toggle checkbox checkbox-slider--b-flat">
+                                <label>
+                                    <input name="cv_obterproprviatura" type="checkbox" form="formulariocriar"><span></span>
+                                </label>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+                    <div class="cv_botoes">
+                        <div id="iniciarcriarboleia" onClick="document.getElementById('formulariocriar').submit()" class="cv_botaoverde cv_cancelar">
+                            <div class="cv_botaoimagem">
+                                <img src="assets/imagens/cb_criar.svg">
+                            </div>
+                            <div class="cv_botaoadicionar cv_largurabotao">CRIAR BOLEIA</div>
+                        </div>
+                        <div class="cv_vazia2"></div>
+                        <div id="cancelarcriarboleia" onClick="$('#criarBoleia').modal('hide')" class="cv_botaoverde">
+                            <div class="cv_botaoimagem2">
+                                <img src="assets/imagens/cb_cancelar.svg"></div>
+                            <div class="cv_botaocancelar cv_largurabotao">CANCELAR</div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+            </div>
+         </form>

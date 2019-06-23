@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Softpool</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/fontawesome-all.css" />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/slider/nouislider.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css/datepicker/tempusdominus-bootstrap-4.min.css"  />
+        <link rel="stylesheet" type="text/css" href="assets/dist/css/styles_detalhesboleia.css"  />
+    </head>
+
+<div id="32" class="azul">
+	<div id="fecharmodal" class="mb_icone">
+		<img src="assets/imagens/cruz.svg">
+	</div>
+	<div class="mb_banneroculto azulclaro">
+	</div>
+	<div class="mb_cantodobanner branco">
+		<div class="mb_imagemcondutor">
+			<img src="assets/fotos/2.png">
+		</div>
+		<div class="mb_condutor">Gil Rodrigues
+		</div>
+	</div>
+	
+	<div class="mb_bannerprincipal branco">
+		<div class="mb_flexboxcontactos">
+			<div class="mb_databoleia azulclaro">
+				<div class="mb_iconeflex">
+					<img src="assets/imagens/inserirboleia-cal.svg">
+				</div>
+				<span class="mb_datadataboleia">Julho 10
+				</span>
+			</div>
+			<div class="mb_iconeflexbox">
+				<div class="mb_contactartodos" data-toggle="tooltip" title="Contactar todos">
+				</div>
+				<div class="mb_contactarcondutor" data-toggle="tooltip" title="Contactar condutor">
+				</div>
+				<div class="mb_telefone" data-toggle="tooltip" title="Telefone do condutor">
+				</div>
+			</div>
+		</div>
+		<div class="mb_flexboxgrande">
+			<div class="mb_flexboxpassageirosebagagens">
+				<div class="mb_listapassageiros">
+					 <div class="mb_passageiro">
+						<img class="mb_passageiro_img" src="assets/fotos/1.png" title="'.$user->NOME.'">
+            <img class="mb_trabalhooulazer" src="assets/imagens/viajoemtrabalho.svg">
+
+            </div>
+				</div>
+				<div class="mb_listabagagens">
+					<div class="mb_passageiro">
+						<img class="mb_passageiro_img" src="assets/imagens/mb_bagagem.svg">
+					
+					</div>
+				</div>
+			</div>
+			<div class="mb_horarioboleiaebotoes">
+				<div class="mb_horarioboleia">
+					<div class="mb_larguratotal">
+						<div class="mb_elemento">
+							<div class="mb_phpequenosembase">
+								<img src="assets/imagens/mb_phsembase.svg">
+							</div>Viseu
+						</div>
+						<div class="mb_setas">
+							<img src="assets/imagens/setasdireita.svg">
+						</div>
+						<div class="mb_elemento">
+							<div class="mb_phpequeno">
+								<img src="assets/imagens/placeholder.svg">
+							</div>Paris
+						</div>
+					</div>
+					<div class="mb_larguratotal">
+						<div class="mb_elemento">
+							<div class="mb_relogio">
+								<img src="assets/imagens/relogio.svg">
+							</div>07:30
+						</div>
+						<div class="mb_setas">
+							<img src="assets/imagens/setasdireita.svg">
+						</div>
+						<div class="mb_elemento">14:30
+						</div>
+					</div>
+				</div>
+				<div class="mb_botaoverde" id="acordeao">
+					<div class="mb_botaoimagem">
+						<img src="assets/imagens/mb_addboleia.svg">
+					</div>
+					<div class="mb_botaoadicionar mb_largurabotao">Adicionar
+					</div>
+				</div>
+				<div class="esconder" id="subbotoes">
+					<div class="mb_botaoazul mb_addbprof" id="idbol-32">
+						<div class="mb_botaoimagem">
+							<img src="assets/imagens/mb_addboleia.svg">
+						</div>
+						<div class="mb_botaoadicionar mb_largurabotao">Profissional
+						</div>
+					</div>
+					<div class="mb_botaoazul mb_addbpess" id="idbol-32">
+						<div class="mb_botaoimagem">
+							<img src="assets/imagens/mb_addboleia.svg">
+						</div>
+						<div class="mb_botaoadicionar mb_largurabotao">Pessoal
+						</div>
+					</div>
+				</div>
+				<div class="mb_botaoverde mb_cancb" id="idbol-32">
+					<div class="mb_botaoimagem">
+						<img src="assets/imagens/mb_cancboleia.svg">
+					</div>
+					<div class="mb_botaocancelar mb_largurabotao">Cancelar
+					</div>
+				</div>
+				<div class="mb_botaoverde mb_addenc" id="idbol-32">
+					<div class="mb_botaoimagem">
+						<img src="assets/imagens/mb_addencomenda.svg">
+					</div>
+					<div class="mb_botaoadencomenda mb_largurabotao">
+						<span>Adicionar Encomenda
+						</span>
+					</div>
+				</div>
+			</div>
+            <div id="map"></div>
+		</div>
+	</div>
+</div>
+ 
+<script>
+                var service;
+                var map;
+                
+                function createMarker(place) {
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: place.geometry.location,
+                    });
+                }
+                
+                function fazerOQuecomosResultados(results, status)
+                {
+                     if (status == google.maps.places.PlacesServiceStatus.OK) {
+                        for (var i = 0; i < results.length; i++) {
+                            createMarker(results[i]);
+                        }
+                      }
+                    
+                }
+                
+                function PesquisarLocais(local)
+                {
+                    var request = {
+                        query: local
+                    }
+                    
+                    service.textSearch(request, fazerOQuecomosResultados);
+                }
+                
+                  function initMap(){
+                    //opções do mapa
+                    
+                    var options = {
+                        zoom: 8,
+                        center:{lat:40.6566,lng:-7.9125 }
+                    }
+                    
+                    
+                    //criação do mapa
+                    var map = new google.maps.Map(document.getElementById('map'),options);
+                    
+                    
+                    service = new google.maps.places.PlacesService(map);
+                    
+                    PesquisarLocais("Aveiro");
+                }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZl2ad3Z7WU2QwxU-OOJ6wsfWw2TsfJXk&libraries=places&callback=initMap" async defer></script>

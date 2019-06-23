@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3757 3197.66 40 46.323">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e31e24;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f3ed25;
+      }
+
+      .cls-3 {
+        filter: url(#Path_130);
+      }
+
+      .cls-4 {
+        filter: url(#Path_129);
+      }
+    </style>
+    <filter id="Path_129" x="3772" y="3197.66" width="25" height="40.54" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_130" x="3773.228" y="3221.439" width="22.543" height="22.543" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_76" data-name="Group 76" transform="translate(1947 2478)">
+    <g id="cancelado" transform="translate(1810 731)">
+      <path id="Path_127" data-name="Path 127" class="cls-1" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0ZM8.053,19.555,12.609,15,8.053,10.443a1.7,1.7,0,0,1,0-2.391h0a1.7,1.7,0,0,1,2.391,0L15,12.609l4.557-4.557a1.7,1.7,0,0,1,2.391,0h0a1.7,1.7,0,0,1,0,2.391L17.391,15l4.557,4.557a1.7,1.7,0,0,1,0,2.391h0a1.7,1.7,0,0,1-2.391,0L15,17.391l-4.557,4.557a1.7,1.7,0,0,1-2.391,0h0a1.7,1.7,0,0,1,0-2.391Z"/>
+    </g>
+    <g id="warning-sign" transform="translate(1519.773 453)">
+      <g class="cls-4" transform="matrix(1, 0, 0, 1, -3466.77, -2931)">
+        <path id="Path_129-2" data-name="Path 129" class="cls-2" d="M187.727,22.54a2.086,2.086,0,0,0,2.078-1.911l1.41-16.836a3.5,3.5,0,1,0-6.975,0l1.41,16.836A2.086,2.086,0,0,0,187.727,22.54Z" transform="translate(3596.77 3203.66)"/>
+      </g>
+      <g class="cls-3" transform="matrix(1, 0, 0, 1, -3466.77, -2931)">
+        <path id="Path_130-2" data-name="Path 130" class="cls-2" d="M207.725,410.908A2.272,2.272,0,1,0,210,413.18,2.271,2.271,0,0,0,207.725,410.908Z" transform="translate(3576.78 2816.53)"/>
+      </g>
+    </g>
+  </g>
+</svg>

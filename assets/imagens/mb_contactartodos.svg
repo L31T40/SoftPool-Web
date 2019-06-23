@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7142.126 1717.513 72.2 42.005">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1b427a;
+      }
+
+      .cls-2 {
+        fill: #466da2;
+      }
+    </style>
+  </defs>
+  <g id="Group_360" data-name="Group 360" transform="translate(467 1055)">
+    <g id="black-back-closed-envelope-shape" transform="translate(6719 603.5)">
+      <g id="Group_151" data-name="Group 151" transform="translate(0 59.013)">
+        <path id="Path_179" data-name="Path 179" class="cls-1" d="M41.871,332.178a2.421,2.421,0,0,0,1.657-.625L35.5,323.527l-.555.4q-.9.664-1.462,1.035a9.009,9.009,0,0,1-1.494.759,4.552,4.552,0,0,1-1.739.387h-.031a4.551,4.551,0,0,1-1.739-.387,8.98,8.98,0,0,1-1.494-.759q-.561-.371-1.462-1.035c-.167-.123-.353-.257-.554-.4l-8.027,8.028a2.422,2.422,0,0,0,1.658.625Z" transform="translate(-16.075 -309.922)"/>
+        <path id="Path_180" data-name="Path 180" class="cls-1" d="M1.6,199.93A8.379,8.379,0,0,1,0,198.555v12.21l7.073-7.073Q4.951,202.21,1.6,199.93Z" transform="translate(0 -191.379)"/>
+        <path id="Path_181" data-name="Path 181" class="cls-1" d="M418.8,199.93q-3.23,2.186-5.49,3.764l7.071,7.071V198.555A8.723,8.723,0,0,1,418.8,199.93Z" transform="translate(-392.053 -191.379)"/>
+        <path id="Path_182" data-name="Path 182" class="cls-1" d="M25.8,59.013H2.535a2.257,2.257,0,0,0-1.873.822A3.189,3.189,0,0,0,.006,61.89a3.694,3.694,0,0,0,.869,2.158,7.842,7.842,0,0,0,1.849,1.825q.537.38,3.241,2.253c.973.674,1.819,1.262,2.546,1.769.62.432,1.154.806,1.6,1.116l.236.168.436.314q.514.372.854.6t.822.514a4.8,4.8,0,0,0,.909.427,2.515,2.515,0,0,0,.79.142h.031a2.516,2.516,0,0,0,.79-.142,4.785,4.785,0,0,0,.909-.427q.482-.285.822-.514t.854-.6L18,71.179l.236-.168,1.6-1.112,5.8-4.026a7.518,7.518,0,0,0,1.928-1.944,4.182,4.182,0,0,0,.774-2.387A2.55,2.55,0,0,0,25.8,59.013Z" transform="translate(-0.006 -59.013)"/>
+      </g>
+    </g>
+    <g id="Group_154" data-name="Group 154" transform="translate(69)">
+      <g id="user_1_" data-name="user (1)" transform="translate(6606.126 680.116)">
+        <ellipse id="Ellipse_9" data-name="Ellipse 9" class="cls-2" cx="5.658" cy="5.658" rx="5.658" ry="5.658" transform="translate(4.597)"/>
+        <path id="Path_91" data-name="Path 91" class="cls-2" d="M30.881,150a10.256,10.256,0,0,0-10.256,10.256H41.136A10.256,10.256,0,0,0,30.881,150Z" transform="translate(-20.625 -135.854)"/>
+      </g>
+      <g id="user_1_2" data-name="user (1)" transform="translate(6634.782 680.116)">
+        <ellipse id="Ellipse_9-2" data-name="Ellipse 9" class="cls-2" cx="5.658" cy="5.658" rx="5.658" ry="5.658" transform="translate(4.597)"/>
+        <path id="Path_91-2" data-name="Path 91" class="cls-2" d="M30.881,150a10.256,10.256,0,0,0-10.256,10.256H41.136A10.256,10.256,0,0,0,30.881,150Z" transform="translate(-20.625 -135.854)"/>
+      </g>
+      <g id="user_1_3" data-name="user (1)" transform="translate(6619.292 676.244)">
+        <ellipse id="Ellipse_9-3" data-name="Ellipse 9" class="cls-2" cx="5.658" cy="5.658" rx="5.658" ry="5.658" transform="translate(4.597)"/>
+        <path id="Path_91-3" data-name="Path 91" class="cls-2" d="M30.881,150a10.256,10.256,0,0,0-10.256,10.256H41.136A10.256,10.256,0,0,0,30.881,150Z" transform="translate(-20.625 -135.854)"/>
+      </g>
+    </g>
+  </g>
+</svg>
